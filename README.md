@@ -212,28 +212,4 @@ if(pos = -1) {
 			break;
 	}}
 }
-void excluirPessoa(P2 *p){
-P2 *q, *ant;
- q = p;
- if(q->prox == NULL)
-   {
-   printf("%s foi atendido!\n", q->x.nome);
 
-   system("pause");
-   free(q);
-   return NULL;
-   }
- else{
-   do{
-     ant = q;
-     q = q->prox;
-     }while(q->prox != NULL);
-
-   printf("%s foi antendido!\n", q->x.nome);
-
-   system("pause");
-   free(q);
-   ant->prox = NULL;
-
-   return ant;
-}}
